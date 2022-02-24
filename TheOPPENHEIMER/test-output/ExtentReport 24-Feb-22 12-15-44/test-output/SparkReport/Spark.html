@@ -1,0 +1,1749 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 24, 2022 12:15:44 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@invalid</a><a class="dropdown-item" href="#">@TaxCalculation</a><a class="dropdown-item" href="#">@valid</a><a class="dropdown-item" href="#">@TaxDisplayChecking</a><a class="dropdown-item" href="#">@APITest</a><a class="dropdown-item" href="#">@DispenseNow</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To Check API is working</p>
+            <p class="text-sm">
+              <span>12:15:45 PM</span> / <span>00:00:28:210</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">To Check API is working</h5>
+<span class='badge badge-success'>02.24.2022 12:15:45 PM</span>
+<span class='badge badge-danger'>02.24.2022 12:16:13 PM</span>
+<span class='badge badge-default'>00:00:28:210</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To test the getTaxRelief API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.i_set_request_header()">
+                <span>Given I Set request HEADER</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.send_a_get_http_request()">
+                <span>When Send a GET HTTP request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.i_receive_valid_response()">
+                <span>Then I receive valid Response</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.validate_the_response()">
+                <span>And Validate the Response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>To test the getTaxReliefSummary API</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.i_set_request_header()">
+                <span>Given I Set request HEADER</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.send_a_get_gettaxreliefsummary_api_http_request()">
+                <span>When Send a GET getTaxReliefSummary API HTTP request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.i_receive_valid_response()">
+                <span>Then I receive valid Response</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.validate_the_response()">
+                <span>And Validate the Response</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log fail-bg mr-2">Fail</span>To test the Post insertPerson API</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.set_insertperson_request_header()">
+                <span>Given Set insertPerson request HEADER</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.send_a_post_insertperson_api_http_request()">
+                <span>When Send a POST insertPerson API HTTP request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.receive_valid_post_response()">
+                <span>Then Receive valid POST Response</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.APIStepDefinition.validate_the_response()">
+                <span>And Validate the Response</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [202]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinitions.APIStepDefinition.validate_the_response(APIStepDefinition.java:63)
+	at ?.Validate the Response(file:///C:/Elsa/TechChallenge/TheOPPENHEIMER/src/test/java/features/APITesting.feature:23)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log fail-bg mr-2">Fail</span>To test the Post insertMultiplePerson API</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.set_insertmultipleperson_request_header()">
+                <span>Given Set insertMultiplePerson request HEADER</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.send_a_post_insertperson_api_http_request()">
+                <span>When Send a POST insertPerson API HTTP request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.receive_valid_post_response()">
+                <span>Then Receive valid POST Response</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.APIStepDefinition.validate_the_response()">
+                <span>And Validate the Response</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [200] but found [202]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinitions.APIStepDefinition.validate_the_response(APIStepDefinition.java:63)
+	at ?.Validate the Response(file:///C:/Elsa/TechChallenge/TheOPPENHEIMER/src/test/java/features/APITesting.feature:30)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded2.png' src="./screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checking DispenseButton</p>
+            <p class="text-sm">
+              <span>12:16:13 PM</span> / <span>00:00:06:365</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Checking DispenseButton</h5>
+<span class='badge badge-success'>02.24.2022 12:16:13 PM</span>
+<span class='badge badge-danger'>02.24.2022 12:16:19 PM</span>
+<span class='badge badge-default'>00:00:06:365</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>To check the Displense Now button availability and the functionality</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_is_on_the_oppenheimer_project_landing_page()">
+                <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_check_the_dispense_now_button_display_and_select()">
+                <span>When User Check the Dispense Now button display and Select</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.validate_the_cash_dispensed_message()">
+                <span>Then Validate the Cash dispensed message</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="51"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checking Tax Calculation</p>
+            <p class="text-sm">
+              <span>12:16:19 PM</span> / <span>00:04:04:213</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Checking Tax Calculation</h5>
+<span class='badge badge-success'>02.24.2022 12:16:19 PM</span>
+<span class='badge badge-danger'>02.24.2022 12:20:23 PM</span>
+<span class='badge badge-default'>00:04:04:213</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=51</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 123111 10000 3000 M 11012005</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 124111 10000 3000 M 11012004</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 125111 10000 3000 M 11012003</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 126111 10000 3000 M 11011988</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="77"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 127111 10000 3000 M 11011987</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 128111 10000 3000 M 11011986</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 129111 10000 3000 M 11011973</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 130111 10000 3000 M 11011972</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="101"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 131111 10000 3000 M 11011971</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="107"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 132111 10000 3000 M 11011948</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="113"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 133111 10000 3000 M 11011947</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 134111 10000 3000 M 11011946</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="125"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 223111 10000 3000 F 11012005</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="131"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 224111 10000 3000 F 11012004</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="137"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 225111 10000 3000 F 11012003</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="143"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 226111 10000 3000 F 11011988</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="149"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 227111 10000 3000 F 11011987</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="155"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 228111 10000 3000 F 11011986</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="161"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 229111 10000 3000 F 11011973</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="167"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 230111 10000 3000 F 11011972</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="173"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 231111 10000 3000 F 11011971</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="179"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 232111 10000 3000 F 11011948</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="185"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 233111 10000 3000 F 11011947</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="191"><span class="badge log pass-bg mr-2">Pass</span>To chek the taxrelief amount verification for the records</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User details 234111 10000 3000 F 11011946</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="197"><span class="badge log pass-bg mr-2">Pass</span>To check the Tax amount displayed is correct</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_is_on_the_oppenheimer_project_landing_page()">
+                <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.find_the_taotal_tax_relief_amount()">
+                <span>When Find the taotal tax relief amount</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="203"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Add User from CSVFile</p>
+            <p class="text-sm">
+              <span>12:20:23 PM</span> / <span>00:00:41:907</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Add User from CSVFile</h5>
+<span class='badge badge-success'>02.24.2022 12:20:23 PM</span>
+<span class='badge badge-danger'>02.24.2022 12:21:05 PM</span>
+<span class='badge badge-default'>00:00:41:907</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=203</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="204"><span class="badge log pass-bg mr-2">Pass</span>To check the CSV fileupload function with a valid data and validate the records are added</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_is_on_the_oppenheimer_project_landing_page()">
+                <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_select_the_browse_button_to_upload_the_something_file(java.lang.String)">
+                <span>When User select the Browse button to upload the "valid" file</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.validate_something_records_are_added(java.lang.String)">
+                <span>Then Validate "24" records are added</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="212"><span class="badge log pass-bg mr-2">Pass</span>To check the CSV fileupload function with an invalid data and validate the record is added</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_is_on_the_oppenheimer_project_landing_page()">
+                <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_select_the_browse_button_to_upload_the_something_file(java.lang.String)">
+                <span>When User select the Browse button to upload the "invalid" file</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.validate_something_records_are_added(java.lang.String)">
+                <span>Then Validate "0" records are added</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="220"><span class="badge log pass-bg mr-2">Pass</span>To check the natid field is masked from the 5th character onwards</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.user_is_on_the_oppenheimer_project_landing_page()">
+                <span>Given User is on The Oppenheimer Project Landing page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LandingPageStepDefinition.verify_the_natid_is_masked_from_the_5th_cahracter()">
+                <span>Then Verify the natid is masked from the 5th cahracter</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:16:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>And Validate the Response</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the Post insertPerson API.And Validate the Response</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:16:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>And Validate the Response</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the Post insertMultiplePerson API.And Validate the Response</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@invalid</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@invalid</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:20:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='203' id='212'>To check the CSV fileupload function with an invalid data and validate the record is added</a>
+<div class="">
+<span class="badge badge-default">Add User from CSVFile.To check the CSV fileupload function with an invalid data and validate the record is added</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>25</span>
+</span>
+<p class="name">@TaxCalculation</p>
+<p class="duration text-sm">25 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TaxCalculation</h4>
+<span status="pass" class='badge log pass-bg'>25 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='52'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='53'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='59'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='65'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='71'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='77'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='83'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='89'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='95'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='101'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:17:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='107'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='113'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='119'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='125'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='131'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='137'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='143'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:18:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='149'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='155'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='161'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:25 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='167'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='173'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='179'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:19:55 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='185'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:20:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='191'>To chek the taxrelief amount verification for the records</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To chek the taxrelief amount verification for the records</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@valid</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@valid</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:20:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='203' id='204'>To check the CSV fileupload function with a valid data and validate the records are added</a>
+<div class="">
+<span class="badge badge-default">Add User from CSVFile.To check the CSV fileupload function with a valid data and validate the records are added</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:20:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='203' id='220'>To check the natid field is masked from the 5th character onwards</a>
+<div class="">
+<span class="badge badge-default">Add User from CSVFile.To check the natid field is masked from the 5th character onwards</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TaxDisplayChecking</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TaxDisplayChecking</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:20:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='197'>To check the Tax amount displayed is correct</a>
+<div class="">
+<span class="badge badge-default">Checking Tax Calculation.To check the Tax amount displayed is correct</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@APITest</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@APITest</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To test the getTaxRelief API</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the getTaxRelief API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:15:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>To test the getTaxReliefSummary API</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the getTaxReliefSummary API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:16:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>To test the Post insertPerson API</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the Post insertPerson API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:16:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>To test the Post insertMultiplePerson API</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the Post insertMultiplePerson API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@DispenseNow</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DispenseNow</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:16:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='42' id='43'>To check the Displense Now button availability and the functionality</a>
+<div class="">
+<span class="badge badge-default">Checking DispenseButton.To check the Displense Now button availability and the functionality</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 24, 2022 12:15:44 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 24, 2022 12:21:05 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'>
+<b>3</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='25%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='93%'><b>31</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='6%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='97%'><b>77</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>2</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"To Check API is working":28.21,"Checking DispenseButton":6.365,"Checking Tax Calculation":244.213,"Add User from CSVFile":41.907
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@invalid</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TaxCalculation</td>
+<td>25</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@valid</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TaxDisplayChecking</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@APITest</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@DispenseNow</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 31,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 77,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

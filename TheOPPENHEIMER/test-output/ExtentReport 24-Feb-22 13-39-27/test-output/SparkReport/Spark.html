@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 24, 2022 01:39:27 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@APITest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">To Check API is working</p>
+            <p class="text-sm">
+              <span>1:39:28 PM</span> / <span>00:00:09:362</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">To Check API is working</h5>
+<span class='badge badge-success'>02.24.2022 1:39:28 PM</span>
+<span class='badge badge-danger'>02.24.2022 1:39:37 PM</span>
+<span class='badge badge-default'>00:00:09:362</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>To test the getTaxRelief API</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.i_set_request_header()">
+                <span>Given I Set request HEADER</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.send_a_get_http_request()">
+                <span>When Send a GET HTTP request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.APIStepDefinition.i_receive_valid_response()">
+                <span>Then I receive valid Response</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.APIStepDefinition.validate_the_response()">
+                <span>And Validate the Response</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.IllegalArgumentException: Invalid JSON expression:
+Script1.groovy: 1: Unexpected input: '                         [' @ line 1, column 27.
+                            [{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"}]
+                             ^
+
+1 error
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:286)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:57)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at io.restassured.path.json.JsonPath.getList(JsonPath.java:375)
+	at stepDefinitions.APIStepDefinition.validate_the_response(APIStepDefinition.java:71)
+	at ?.Validate the Response(file:///C:/Elsa/TechChallenge/TheOPPENHEIMER/src/test/java/features/APITesting.feature:9)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script1.groovy: 1: Unexpected input: 'restAssuredJsonRootObject.[' @ line 1, column 27.
+   restAssuredJsonRootObject.[{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1011$$","name":"Elsa","relief":"49000.00"},{"natid":"1231$$","name":"Ajith1","relief":"7000.00"},{"natid":"1241$$","name":"Ajith2","relief":"7000.00"},{"natid":"1251$$","name":"Ajith3","relief":"5600.00"},{"natid":"1261$$","name":"Ajith4","relief":"5600.00"},{"natid":"1271$$","name":"Ajith5","relief":"5600.00"},{"natid":"1281$$","name":"Ajith6","relief":"3500.00"},{"natid":"1291$$","name":"Ajith7","relief":"3500.00"},{"natid":"1301$$","name":"Ajith8","relief":"3500.00"},{"natid":"1311$$","name":"Ajith9","relief":"2569.00"},{"natid":"1321$$","name":"Ajith10","relief":"2569.00"},{"natid":"1331$$","name":"Ajith11","relief":"2569.00"},{"natid":"1341$$","name":"Ajith12","relief":"350.00"},{"natid":"2231$$","name":"Elsa1","relief":"7500.00"},{"natid":"2241$$","name":"Elsa2","relief":"7500.00"},{"natid":"2251$$","name":"Elsa3","relief":"6100.00"},{"natid":"2261$$","name":"Elsa4","relief":"6100.00"},{"natid":"2271$$","name":"Elsa5","relief":"6100.00"},{"natid":"2281$$","name":"Elsa6","relief":"4000.00"},{"natid":"2291$$","name":"Elsa7","relief":"4000.00"},{"natid":"2301$$","name":"Elsa8","relief":"4000.00"},{"natid":"2311$$","name":"Elsa9","relief":"3069.00"},{"natid":"2321$$","name":"Elsa10","relief":"3069.00"},{"natid":"2331$$","name":"Elsa11","relief":"3069.00"},{"natid":"2341$$","name":"Elsa12","relief":"850.00"}]
+                             ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:295)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:151)
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4388)
+	at org.apache.groovy.parser.antlr4.AstBuilder.access$000(AstBuilder.java:176)
+	at org.apache.groovy.parser.antlr4.AstBuilder$1.syntaxError(AstBuilder.java:4399)
+	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
+	at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543)
+	at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportNoViableAlternative(DescriptiveErrorStrategy.java:92)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recover(DescriptiveErrorStrategy.java:53)
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:522)
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:410)
+	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:357)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:250)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:228)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:269)
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
+	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:257)
+	at java.util.Iterator.forEachRemaining(Unknown Source)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.ReferencePipeline$Head.forEach(Unknown Source)
+	at org.codehaus.groovy.control.CompilationUnit.buildASTs(CompilationUnit.java:666)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:632)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:526)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:538)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:426)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:461)
+	at groovy.lang.GroovyShell.evaluate(GroovyShell.java:436)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrap.invoke(PogoMetaMethodSite.java:182)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.call(PogoMetaMethodSite.java:73)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.path.json.JSONAssertion.eval(JSONAssertion.groovy:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.path.json.JSONAssertion.getAsJsonObject(JSONAssertion.groovy:46)
+	at io.restassured.internal.path.json.JSONAssertion$getAsJsonObject.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.path.json.JSONAssertion.getResult(JSONAssertion.groovy:28)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:203)
+	at io.restassured.path.json.JsonPath.getList(JsonPath.java:375)
+	at stepDefinitions.APIStepDefinition.validate_the_response(APIStepDefinition.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.AddScreenshot(io.cucumber.java.Scenario)</span>
+      <div>image
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.IllegalArgumentException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.IllegalArgumentException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:39:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>And Validate the Response</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the getTaxRelief API.And Validate the Response</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@APITest</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@APITest</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:39:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To test the getTaxRelief API</a>
+<div class="">
+<span class="badge badge-default">To Check API is working.To test the getTaxRelief API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 24, 2022 01:39:27 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 24, 2022 01:39:37 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'><b>4</b> steps passed</small></div>
+<div>
+<small data-tooltip='20%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"To Check API is working":9.362
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@APITest</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 4,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
