@@ -17,9 +17,12 @@ import pageObjects.LandingPage;
 public class TestBase {
 
 	public WebDriver driver;
+	public String url;
 	
 	public WebDriver WebDriverManager() throws IOException
 	{
+		
+				
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//global.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
@@ -53,6 +56,15 @@ public class TestBase {
 	}
 	
 	
+	public String getURL() throws IOException
+	{
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//global.properties");
+		Properties prop = new Properties();
+		prop.load(fis);
+		String url = prop.getProperty("QAUrl");
+		return url;
+		
+	}
 	
 }
 

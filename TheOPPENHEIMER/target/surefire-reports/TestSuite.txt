@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 259.976 s - in TestSuite
+Tests run: 33, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 317.76 s <<< FAILURE! - in TestSuite
+cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertPerson API", "Optional[To Check API is working]"](3)  Time elapsed: 4.505 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [202]
+
+cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertMultiplePerson API", "Optional[To Check API is working]"](4)  Time elapsed: 3.609 s  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [202]
+

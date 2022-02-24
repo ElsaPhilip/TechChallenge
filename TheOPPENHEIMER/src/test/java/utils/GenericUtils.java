@@ -9,6 +9,12 @@ import java.util.Iterator;
 import java.util.Locale;
 import java.util.Set;
 
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.openqa.selenium.WebDriver;
 
 public class GenericUtils {
@@ -17,7 +23,9 @@ public class GenericUtils {
 	public GenericUtils(WebDriver driver) {
 		this.driver = driver;
 	}
-
+	public CloseableHttpResponse response;
+	CloseableHttpClient client = HttpClients.createDefault();
+	public HttpGet request;
 	public void SwitchWindowToChild() {
 		Set<String> s1 = driver.getWindowHandles();
 		Iterator<String> i1 = s1.iterator();
@@ -71,4 +79,15 @@ public class GenericUtils {
 		return difference_In_Years;
 	}
 
+	public CloseableHttpResponse SetTheHeader(HttpGet request) throws ClientProtocolException, IOException{
+	request.addHeader("Content-Type", "application/json");
+	response = client.execute(request);
+	return response;
+	}
+	
+	public  CloseableHttpResponse SetPOSTHeader(HttpPost request) throws ClientProtocolException, IOException {
+		request.addHeader("Content-Type", "application/json");
+		response = client.execute(request);
+		return response;
+		}
 }
