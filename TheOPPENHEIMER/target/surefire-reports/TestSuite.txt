@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 35, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 318.451 s <<< FAILURE! - in TestSuite
-cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertMultiplePerson API", "Optional[To Check API is working]"](3)  Time elapsed: 3.969 s  <<< FAILURE!
+Tests run: 35, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 251.746 s <<< FAILURE! - in TestSuite
+cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertMultiplePerson API", "Optional[To Check insertMultiplePerson API is working]"](7)  Time elapsed: 4.792 s  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [202]
 
-cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertMultiplePerson API", "Optional[To Check API is working]"](4)  Time elapsed: 3.155 s  <<< FAILURE!
+cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertMultiplePerson API", "Optional[To Check insertMultiplePerson API is working]"](8)  Time elapsed: 4.243 s  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [202]
 
-cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertPerson API", "Optional[To Check API is working]"](5)  Time elapsed: 3.43 s  <<< FAILURE!
+cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertPerson API", "Optional[To Check SingleUser Insert API is working]"](9)  Time elapsed: 4.765 s  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [202]
 
-cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertPerson API", "Optional[To Check API is working]"](6)  Time elapsed: 3.941 s  <<< FAILURE!
+cucumberOptions.TestNGTestRunner.runScenario["To test the Post insertPerson API", "Optional[To Check SingleUser Insert API is working]"](10)  Time elapsed: 4.101 s  <<< FAILURE!
 java.lang.AssertionError: expected [200] but found [202]
 
